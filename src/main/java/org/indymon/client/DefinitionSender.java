@@ -24,7 +24,7 @@ public class DefinitionSender {
         definitionsRequest.setPresentersAggregators(presentersAggregators);
         definitionsRequest.setPresentersChecks(presentersChecks);
         RestTemplate restTemplate = new RestTemplate();
-        restTemplate.put(host + "/definitionsRequest", definitionsRequest, (Object) null);
+        restTemplate.put(host + "/definitions", definitionsRequest, (Object) null);
     }
 
 }
