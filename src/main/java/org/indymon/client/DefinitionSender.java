@@ -14,6 +14,12 @@ public class DefinitionSender {
         this.host = host;
     }
 
+    public void deleteAll()
+    {
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(host + "/definitions");
+    }
+
     public void send(
             CheckDefinition[] checks,
             PresenterAggregatorDefinition[] presentersAggregators,
