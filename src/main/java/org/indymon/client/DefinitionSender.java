@@ -6,6 +6,8 @@ import org.indymon.common.model.PresenterAggregatorDefinition;
 import org.indymon.common.model.PresenterCheckDefinition;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
+
 public class DefinitionSender {
 
     private String host;
@@ -21,9 +23,9 @@ public class DefinitionSender {
     }
 
     public void send(
-            CheckDefinition[] checks,
-            PresenterAggregatorDefinition[] presentersAggregators,
-            PresenterCheckDefinition[] presentersChecks
+            ArrayList<CheckDefinition> checks,
+            ArrayList<PresenterAggregatorDefinition> presentersAggregators,
+            ArrayList<PresenterCheckDefinition> presentersChecks
     ) {
         PutDefinitionsRequest definitionsRequest = new PutDefinitionsRequest();
         definitionsRequest.setChecks(checks);
