@@ -39,10 +39,10 @@ repositories {
 
 dependencies {
 
-    compile group: 'org.springframework.boot',   name: 'spring-boot-starter', version: '1.2.5.RELEASE'
+    compile group: 'org.springframework.boot',   name: 'spring-boot-starter', version: '2.2.2.RELEASE'
     compile group: 'org.springframework',        name: 'spring-web',          version: '4.2.1.RELEASE'
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind',    version: '2.6.2'
-    compile group: 'org.indymon',                name: 'indymon-common',      version: '1.0.0.RELEASE'
+    compile group: 'org.indymon',                name: 'indymon-common',      version: '1.0.2.RELEASE'
 }
 
 task wrapper(type: Wrapper) {
